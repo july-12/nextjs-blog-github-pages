@@ -21,4 +21,7 @@ jobs:
         run: |
           npm install
       - name: build pages
-        run: npm run deploy
+        run: |
+          git config user.name "Faith"
+          git config user.email "test@example.com"
+          npm run deploy
