@@ -17,5 +17,8 @@ jobs:
         uses: actions/setup-node@v3.0.0
         with:
           node-version: '16.x'
+      - name: install pkg
+        run: |
+          npm install
       - name: build pages
-        run: yarn run deploy
+        run: npm run deploy
