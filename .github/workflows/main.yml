@@ -22,6 +22,13 @@ jobs:
           npm install
       - name: build pages
         run: |
-          git config user.name "Faith"
-          git config user.email "test@example.com"
-          npm run deploy
+          npm run build
+          npm run export
+          touch out/.nojekyll
+      - name: GitHub Pages
+              uses: crazy-max/ghaction-github-pages@v3.0.0
+              with:
+                target_branch: gh-pages
+                build_dir: out
+              env:
+                GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
