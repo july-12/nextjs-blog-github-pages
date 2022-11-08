@@ -1,4 +1,5 @@
 import Head from 'next/head'
+import Image from 'next/image'
 import Layout, { siteTitle } from '../components/layout'
 import utilStyles from '../styles/utils.module.css'
 import { getSortedPostsData } from '../lib/posts'
@@ -12,6 +13,7 @@ export default function Home({ allPostsData }) {
         <title>{siteTitle}</title>
       </Head>
       <section className={utilStyles.headingMd}>
+        <Image width={200} height={100} src={`/images/profile.jpg`} alt="xxx" />
         <p>
           Hello, I’m <strong>Shu</strong>. I’m a software engineer and a
           translator (English/Japanese). You can contact me on{' '}

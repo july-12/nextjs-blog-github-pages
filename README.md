@@ -1,1 +1,7 @@
-This is a final template for [Learn Next.js](https://nextjs.org/learn).
+## static generation blog by nextjs
+
+## deploy on github pages
+
+reference [here](https://github.com/vercel/next.js/tree/canary/examples/github-pages)
+
+
