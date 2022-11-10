@@ -13,7 +13,13 @@ export default function Home({ allPostsData }) {
         <title>{siteTitle}</title>
       </Head>
       <section className={utilStyles.headingMd}>
-        <Image width={200} height={100} src={`/images/profile.jpg`} alt="xxx" />
+        <Image width={200} height={100} src={`${process.env.BASE_PATH}/images/profile.jpg`} alt="xxx" />
+        <h3>
+<Link href="/">
+
+          back to home
+</Link>
+          </h3>
         <p>
           Hello, I’m <strong>Shu</strong>. I’m a software engineer and a
           translator (English/Japanese). You can contact me on{' '}
