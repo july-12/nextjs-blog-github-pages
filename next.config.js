@@ -3,7 +3,9 @@
 
 module.exports = {
   basePath: process.env.BASE_PATH,
-  images: {},
+  images: {
+    unoptimized: true
+  },
   env: {
     BASE_PATH: process.env.BASE_PATH
   }

@@ -1,4 +1,3 @@
-import Layout from '../../components/layout'
 import { getAllPostIds, getPostData } from '../../lib/posts'
 import Head from 'next/head'
 import Link from 'next/link'
@@ -7,7 +6,7 @@ import utilStyles from '../../styles/utils.module.css'
 
 export default function Post({ postData }) {
   return (
-    <Layout>
+    <>
       <Head>
         <title>{postData.title}</title>
       </Head>
@@ -20,7 +19,7 @@ export default function Post({ postData }) {
       </article>
 
       <Link href="/">back to home</Link>
-    </Layout>
+    </>
   )
 }
 
