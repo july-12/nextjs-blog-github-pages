@@ -10,7 +10,8 @@
   "keyworks": [
     "blog",
     "nextjs",
-    "markdown"
+    "markdown",
+    "frontend"
   ],
   "dependencies": {
     "@os2edu/layout": "0.1.4",
