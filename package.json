@@ -11,7 +11,8 @@
     "blog",
     "nextjs",
     "markdown",
-    "frontend"
+    "frontend",
+    "docusaurus"
   ],
   "dependencies": {
     "@os2edu/layout": "0.1.4",
